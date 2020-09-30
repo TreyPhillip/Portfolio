@@ -20,7 +20,11 @@ class Main extends Component {
                 <h1>Hi, I'm Trey. A junior developer</h1>
             </header>
             <body>
-                <p>test test test</p>
+                <div>
+                    <h1>About Me</h1>
+                    <p className="about">I am a graduate of the Computer Programmer/Analyst
+                        course at program at Consetoga College</p>
+                </div>
             </body>
         </main>
         );
