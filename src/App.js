@@ -1,7 +1,11 @@
 import React, { Component } from "react";
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import './styles/App.scss';
-import Sidebar from './Sidebar';
-import Main from './Main';
+import Sidebar from './components/Sidebar/Sidebar';
+import Home from './components/Home/Home';
+import Projects from './components/Projects/Projects';
+import About from './components/About/About';
+import { FaBars } from 'react-icons/fa';
 
 class App extends Component {
   constructor() {
@@ -22,16 +26,28 @@ class App extends Component {
 
   render() {
     return (
-      <div className={`app ${this.state.toggled ? 'toggled' : ''}`}>
-        <Sidebar 
-          toggled={this.state.toggled}
-          collapsed={this.state.collapsed}
-          handleToggleSidebar={this.handleToggleSidebar}
-        />  
-        <Main 
-          handleToggleSidebar={this.handleToggleSidebar}
-        />
-      </div>       
+      <BrowserRouter>
+        <div className={`app ${this.state.toggled ? 'toggled' : ''}`}>
+          
+            <Sidebar
+              toggled={this.state.toggled}
+              collapsed={this.state.collapsed}
+              handleToggleSidebar={this.handleToggleSidebar}
+            /> 
+            <main>
+              <div className="btn-toggle" onClick={() => this.handleToggleSidebar(this.state.toggled)}>
+                <FaBars />
+              </div>
+            
+            <Switch>     
+                <Route path="/Home" component={Home}/>
+                <Route exact path="/" component={Home} />
+                <Route path="/Projects" component={Projects} />
+                <Route path="/About" component={About} />
+            </Switch>
+          </main>
+        </div>
+      </BrowserRouter>
     );
   } this
 };
