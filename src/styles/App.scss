@@ -30,7 +30,7 @@ body {
     cursor: pointer;
     width: 35px;
     height: 35px;
-    background: #353535;
+    background: #524b4b;
     color: #fff;
     text-align: center;
     border-radius: 50%;
@@ -86,9 +86,14 @@ body {
     flex-direction: column;
     overflow-y: auto;
     header {
-      margin-bottom: 40px;
+      margin-bottom: 15px;
       border-bottom: 1px solid #efefef;
       h1 {
+        display: flex;
+        align-items: center;
+        transform: translateX(0px);   
+      }
+      h2 {
         display: flex;
         align-items: center;
         transform: translateX(0px);   
@@ -108,12 +113,11 @@ body {
       }
     }
   }
-
   .block {
     display: flex;
     margin-bottom: 24px;
-    font-size: 14px;
-    color: #545454;
+    font-size: 18px;
+    
     > span {
       margin-left: 10px;
     }
@@ -126,26 +130,54 @@ body {
     margin-bottom: 450px;
   }
 
-  .about {
-    margin: auto;
+  .head {
+    text-align: left;
+    margin-right: auto;
   }
-}
 
-.badge {
-  padding: 3px 6px;
-  font-size: 9px;
-  letter-spacing: 1px;
-  border-radius: 15px;
-  &.red {
-    color: #ffffff;
-    background: #d63030;
+  &.rtl {
+    direction: rtl;
+    text-align: right;
+
+    header {
+      h1 {
+        transform: translateX(20px);
+      }
+    }
+    .block {
+      direction: rtl;
+      > span {
+        margin-left: 0;
+        margin-right: 10px;
+      }
+    }
+    .sidebar-btn-wrapper {
+      .sidebar-btn {
+        span {
+          margin-left: 0;
+          margin-right: 5px;
+        }
+      }
+    }
   }
-  &.gray {
-    color: #ffffff;
-    background: #777777;
+
+  @media (max-width: 767.98px) {
+    overflow-x: hidden;
+    header {
+      h1 {
+        font-size: 24px;
+      }
+    }
   }
-  &.yellow {
-    color: #000000;
-    background: #ffd331;
+  @media (max-width: $breakpoint-md) {
+    .btn-toggle {
+      display: flex;
+    }
+
+    &.rtl {
+      .btn-toggle {
+        margin-left: auto;
+      }
+    }
   }
 }
