@@ -15,6 +15,7 @@ class App extends Component {
         toggled: true,
       };
     this.handleToggleSidebar = this.handleToggleSidebar.bind(this);
+    document.title = 'Trey Phillip | Junior Developer';
   }
 
   handleToggleSidebar = (value) => {
@@ -27,8 +28,7 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className={`app ${this.state.toggled ? 'toggled' : ''}`}>
-          
+        <div className={`app ${this.state.toggled ? 'toggled' : ''}`}>        
             <Sidebar
               toggled={this.state.toggled}
               collapsed={this.state.collapsed}
