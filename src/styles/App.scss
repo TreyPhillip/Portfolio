@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-$sidebar-bg-color: #1d1d1d;
+$sidebar-bg-color: #242323;
 $submenu-bg-color: rgba(255, 255, 255, 0.05);
 $submenu-bg-color-collapsed: rgba(29, 29, 29, 0.95);
 $sidebar-color: #adadad;
@@ -24,7 +24,7 @@ body {
   height: 100%;
   display: flex;
   position: relative;
-  background-color: #383838;
+  background-color: #1d1c1c;
 
   .btn-toggle {
     cursor: pointer;
@@ -91,11 +91,14 @@ body {
       h1 {
         display: flex;
         align-items: center;
+        margin-top: 0px;
+        color: rgb(171, 179, 179);
         transform: translateX(0px);   
       }
       h2 {
         display: flex;
         align-items: center;
+        color: rgb(171, 179, 179);
         transform: translateX(0px);   
       }
     }
@@ -126,7 +129,7 @@ body {
   .intro {
     text-align: center;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 210px;
     margin-bottom: 450px;
   }
 
