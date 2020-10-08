@@ -12,7 +12,7 @@ class App extends Component {
       super();
       this.state = {
         collapsed: true,
-        toggled: true,
+        toggled: false,
       };
     this.handleToggleSidebar = this.handleToggleSidebar.bind(this);
     document.title = 'Trey Phillip | Junior Developer';
@@ -22,6 +22,13 @@ class App extends Component {
     this.setState({
         toggled: !value,
         collapsed: this.state.toggled
+    });
+  }
+
+  handleToggleSidebarMobile = (value) => {
+    this.setState({
+        toggled: !value,
+        collapsed: true
     });
   }
 
@@ -35,17 +42,16 @@ class App extends Component {
               handleToggleSidebar={this.handleToggleSidebar}
             /> 
             <main>
-              <div className="btn-toggle" onClick={() => this.handleToggleSidebar(this.state.toggled)}>
+              <div className="btn-toggle" onClick={() => this.handleToggleSidebarMobile(this.state.toggled)}>
                 <FaBars />
-              </div>
-            
-            <Switch>     
-                <Route path="/Home" component={Home}/>
-                <Route exact path="/" component={Home} />
-                <Route path="/Projects" component={Projects} />
-                <Route path="/About" component={About} />
-            </Switch>
-          </main>
+              </div>          
+              <Switch>     
+                  <Route path="/Home" component={Home}/>
+                  <Route exact path="/" component={Home} />
+                  <Route path="/Projects" component={Projects} />
+                  <Route path="/About" component={About} />
+              </Switch>
+            </main>
         </div>
       </BrowserRouter>
     );
