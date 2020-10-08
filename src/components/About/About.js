@@ -8,46 +8,29 @@ class About extends Component {
                     <h1>About Me</h1>
                 </header>
                 <p className="block">
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim
-                    id est laborum.
+                    I live in Ontario, Canada and I recently graduated from Conestoga College
+                    with an Ontario College Advanced Diploma in Computer Science & IT. Since 
+                    my graduation I have spent my time learning new technologies and enjoying 
+                    my hobbies.
                 </p>
                 <header className="head">
                     <h2>Education</h2>
                 </header>
                 <p className="block">
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim
-                    id est laborum.
+                    My education focused on hands on work with a variety of languages and frameworks.
+                    Most of my classes focused on C# and the .NET Framework, but I also had classes 
+                    on other languages or concepts like JavaScript, Java, Web Design, and Database design.
                 </p>
                 <header className="head">
                     <h2>Skills</h2>
                 </header>
                 <p className="block">
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim
-                    id est laborum.
+                    My strongest skills are in C# and JavaScript. I have 
+                    personal experience but no professional experience in 
+                    Web Design and Application Design in these languages 
+                    and several other like Python, Java, HTML & CSS. I am 
+                    also proficient in Databasing languages like SQL and 
+                    PostgreSQL
                 </p>
             </main>
         );
