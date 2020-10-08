@@ -7,7 +7,7 @@ import PortfolioImage1 from '../images/PortfolioImage1.jpg';
 class Projects extends Component {   
     constructor() {
         const DiceDescription = 'Discord bot developed using JavaScript and the Discord.js node module';
-        const PathfindingDescription = 'Pathfinding Visualizer in Python using A* algorithm';
+        const PathfindingDescription = 'Pathfinding Visualizer in Python using the A* algorithm';
         const PortfolioDescription = 'A website that acts as my portfolio. The website you\'re on right now!';
         super();
         this.state = {
