@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import { Route, HashRouter, Switch } from 'react-router-dom';
 import './styles/App.scss';
 import Sidebar from './components/Sidebar/Sidebar';
 import Home from './components/Home/Home';
@@ -34,7 +34,7 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <div className={`app ${this.state.toggled ? 'toggled' : ''}`}>        
             <Sidebar
               toggled={this.state.toggled}
@@ -53,7 +53,7 @@ class App extends Component {
               </Switch>
             </main>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   } this
 };
