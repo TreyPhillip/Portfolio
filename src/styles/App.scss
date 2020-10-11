@@ -81,10 +81,11 @@ body {
 
   main {
     padding: 24px;
+    padding-bottom: 50px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
+    overflow-y: clip;
     header {
       margin-bottom: 15px;
       border-bottom: 1px solid #efefef;
@@ -120,6 +121,7 @@ body {
     display: flex;
     margin-bottom: 24px;
     font-size: 18px;
+    max-width: 650px;
     
     > span {
       margin-left: 10px;
