@@ -7,7 +7,7 @@ import {
     SidebarHeader,
     SidebarContent,
 } from 'react-pro-sidebar';
-import { FaWrench, FaBars, FaInfo, FaHome, FaEnvelope } from 'react-icons/fa';
+import { FaWrench, FaBars, FaInfo, FaHome } from 'react-icons/fa';
 
 class Sidebar extends Component {
     constructor(props) {
@@ -54,10 +54,6 @@ class Sidebar extends Component {
                             <MenuItem icon={<FaWrench />}> 
                                 Projects
                                 <Link to="/Projects"></Link>
-                            </MenuItem>
-                            <MenuItem icon={<FaEnvelope />}> 
-                                Contact
-                                <Link to="/Contact"></Link>
                             </MenuItem>
                         </Menu>
                     </SidebarContent>             
