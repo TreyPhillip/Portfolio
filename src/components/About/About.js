@@ -6,7 +6,7 @@ class About extends Component {
             <main>
                 <header className="head">
                     <h1>About Me</h1>
-                </header>
+                </header>      
                 <p className="block">
                     I live in Ontario, Canada and I recently graduated from Conestoga College
                     with an Ontario College Advanced Diploma in Computer Science & IT. Since 
@@ -30,7 +30,16 @@ class About extends Component {
                     Web Design and Application Design in these languages 
                     and several other like Python, Java, HTML & CSS. I am 
                     also proficient in Databasing languages like SQL and 
-                    PostgreSQL
+                    PostgreSQL.
+                </p>
+                <header className="head">
+                    <h2>Contact Me</h2>
+                </header>
+                <p className="block">
+                    if you would like to get in contact with me, my email 
+                    address is treyphillip@live.com. I am currently looking 
+                    for long term employment, but I am also interested 
+                    in freelance work, so feel free to send me an email.
                 </p>
             </main>
         );
