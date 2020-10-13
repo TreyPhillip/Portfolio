@@ -5,6 +5,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import Home from './components/Home/Home';
 import Projects from './components/Projects/Projects';
 import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 import { FaBars } from 'react-icons/fa';
 
 class App extends Component {
@@ -50,6 +51,7 @@ class App extends Component {
                   <Route exact path="/" component={Home} />
                   <Route path="/Projects" component={Projects} />
                   <Route path="/About" component={About} />
+                  <Route path="/Contact" component={Contact} />
               </Switch>
             </main>
         </div>
