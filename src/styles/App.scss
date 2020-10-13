@@ -10,7 +10,6 @@ $icon-size: 35px;
 
 @import '~react-pro-sidebar/dist/scss/styles.scss';
 body {
-  margin: 0;
   height: 100vh;
   color: whitesmoke;
   font-family: 'Roboto', sans-serif;
@@ -18,6 +17,7 @@ body {
 
 #root {
   height: 100%;
+  width: auto;
 }
 
 .app {
@@ -80,52 +80,45 @@ body {
   }
 
   main {
-    padding: 24px;
-    padding-bottom: 50px;
+    min-height: 100%;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     overflow-y: clip;
     header {
-      margin-bottom: 15px;
+      margin-top: 15px;
+      margin-left: 44px;
       border-bottom: 1px solid #efefef;
       h1 {
+        margin-top: 35px;
         display: flex;
         align-items: center;
-        margin-top: 0px;
         color: rgb(171, 179, 179);
         transform: translateX(0px);   
       }
       h2 {
+        margin-top: 15px;
         display: flex;
         align-items: center;
         color: rgb(171, 179, 179);
         transform: translateX(0px);   
       }
     }
-
-    footer {
-      margin-top: auto;
-      color: #888;
-      text-align: center;
-      a {
-        text-decoration: none;
-        color: #888;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
+    a {
+      color: lightblue;
+      text-decoration: none;
     }
   }
   .block {
-    display: flex;
+    display: block;
+    margin-left: 44px;
     margin-bottom: 24px;
     font-size: 18px;
-    max-width: 650px;
-    
-    > span {
-      margin-left: 10px;
-    }
+    max-width: 700px;
+  }
+
+  .projects {
+    margin: 25px;
   }
 
   .intro {

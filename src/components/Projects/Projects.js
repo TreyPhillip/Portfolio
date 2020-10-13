@@ -21,14 +21,14 @@ class Projects extends Component {
     
     render() {
         return (
-            <div>
                 <main>
                     <header className="head">
                         <h1>My Projects</h1>
                     </header>
-                </main>
-                    <ProjectList project={this.state.projects} />               
-            </div>
+                    <div className="projects">
+                        <ProjectList project={this.state.projects} />
+                    </div>
+                </main>                    
         );
     };
 }

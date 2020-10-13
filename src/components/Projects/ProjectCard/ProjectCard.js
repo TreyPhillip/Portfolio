@@ -12,6 +12,7 @@ const useStyles = makeStyles ((theme)=> ({
   root: {
     maxWidth: 375,
     minHeight: 375,
+    maxHeight: 375,
     backgroundColor: "white"
   },
   media: {
