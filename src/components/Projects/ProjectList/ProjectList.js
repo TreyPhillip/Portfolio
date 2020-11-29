@@ -1,5 +1,5 @@
 import React from 'react';
-import {ProjectCard}  from '../ProjectCard/ProjectCard';
+import ProjectCard  from '../ProjectCard/ProjectCard';
 import { Container } from "reactstrap";
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
