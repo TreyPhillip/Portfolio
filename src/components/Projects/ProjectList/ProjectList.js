@@ -30,8 +30,8 @@ const ProjectList = props => {
             <Container className="project-list">
                 <GridList cellHeight={460} cols={cols} spacing={15}>
                     {props.project.map((project) => 
-                    <GridListTile fullWidth={true} className="project-tile">
-                        <ProjectCard key={project.projectid} project={project} />
+                    <GridListTile key={project.projectid} fullwidth="true" className="project-tile">
+                        <ProjectCard project={project} />
                     </GridListTile>          
                     )} 
                 </GridList>
