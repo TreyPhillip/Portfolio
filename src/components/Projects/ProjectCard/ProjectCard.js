@@ -23,7 +23,7 @@ const useStyles = makeStyles ((theme)=> ({
   },
 }));
 
-export function ProjectCard(props) {
+export default function ProjectCard(props) {
   const classes = useStyles();
 
   return (
@@ -54,5 +54,3 @@ export function ProjectCard(props) {
       </Card>
   );
 }
-
-export default ProjectCard
