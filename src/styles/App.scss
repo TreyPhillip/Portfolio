@@ -20,6 +20,10 @@ body {
 	width: auto;
 }
 
+.Sidebar {
+	width: 10000px;
+}
+
 .app {
 	min-height: 100%;
 	height: auto;
@@ -41,44 +45,6 @@ body {
 		padding: 5px;
 		margin-top: 20px;
 		margin-left: 10px;
-	}
-
-	.sidebar-btn-wrapper {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		.sidebar-btn {
-			padding: 1px 15px;
-			border-radius: 40px;
-			background: rgba(255, 255, 255, 0.05);
-			color: #adadad;
-			text-decoration: none;
-			margin: 0 auto;
-			height: 35px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			text-overflow: ellipsis;
-			overflow: hidden;
-			span {
-				margin-left: 5px;
-				font-size: 13px;
-			}
-			&:hover {
-				color: $highlight-color;
-			}
-		}
-	}
-
-	.collapsed {
-		.sidebar-btn {
-			display: inline-block;
-			border-radius: 50%;
-			width: 35px;
-			height: 35px;
-			line-height: 40px;
-			padding: 0;
-		}
 	}
 
 	main {
@@ -105,6 +71,22 @@ body {
 				color: rgb(171, 179, 179);
 				transform: translateX(0px);
 			}
+		}
+		.code-snippet {
+			background: #e7e0e0;
+			border: 1px solid rgb(146, 141, 141);
+			color: #666;
+			page-break-inside: avoid;
+			font-family: monospace;
+			font-size: 15px;
+			line-height: 1.6;
+			margin-bottom: 1.6em;
+			max-width: 100%;
+			overflow: auto;
+			padding: 1em 1.5em;
+			display: block;
+			word-wrap: break-word;
+			border-radius: 5px;
 		}
 		a {
 			color: lightblue;
