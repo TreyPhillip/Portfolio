@@ -13,9 +13,9 @@ export default function Projects() {
 
     useEffect(() => {
         setProjects([
-            {projectid: '1', title: 'Path-finding Visualizer', description: PathfindingDescription, image: VisualizerImage1, github: 'https://github.com/TreyPhillip/PathfindingVisualizer'},
-            {projectid: '2', title: 'MrDiceGuy', description: DiceDescription, image: DiceImage1, github: 'https://github.com/TreyPhillip/MrDiceGuy'},
-            {projectid: '3', title: 'My Porfolio', description: PortfolioDescription, image: PortfolioImage1, github: 'https://github.com/TreyPhillip/TreyPhillip.github.io'},
+            {projectid: '1', title: 'Path-finding Visualizer', description: PathfindingDescription, image: VisualizerImage1, github: 'https://github.com/TreyPhillip/PathfindingVisualizer', url: '/Projects/Pathfinder'},
+            {projectid: '2', title: 'MrDiceGuy', description: DiceDescription, image: DiceImage1, github: 'https://github.com/TreyPhillip/MrDiceGuy', url: '/Projects/DiceBot'},
+            {projectid: '3', title: 'My Porfolio', description: PortfolioDescription, image: PortfolioImage1, github: 'https://github.com/TreyPhillip/TreyPhillip.github.io', url: '/Projects/Portfolio'},
         ])
     }, [])
     return (

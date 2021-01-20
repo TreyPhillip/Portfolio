@@ -4,6 +4,7 @@ import { Container } from "reactstrap";
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
+import { Link } from "react-router-dom";
 
 const ProjectList = props => {
     function getCols(screenWidth) {
@@ -29,10 +30,12 @@ const ProjectList = props => {
         <div>
             <Container className="project-list">
                 <GridList cellHeight={460} cols={cols} spacing={15}>
-                    {props.project.map((project) => 
-                    <GridListTile key={project.projectid} fullwidth="true" className="project-tile">
-                        <ProjectCard project={project} />
-                    </GridListTile>          
+                    {props.project.map((project) =>
+                    <GridListTile key={project.projectid}  fullwidth="true" className="project-tile">
+                        <Link to={project.url}>
+                            <ProjectCard project={project} />
+                        </Link>
+                    </GridListTile>
                     )} 
                 </GridList>
             </Container> 

@@ -6,6 +6,9 @@ import Home from './components/Home/Home';
 import Projects from './components/Projects/Projects';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+import DiceBot from './components/Projects/ProjectDetail/DiceBot/DiceBot';
+import Pathfinder from './components/Projects/ProjectDetail/Pathfinder/Pathfinder';
+import Portfolio from './components/Projects/ProjectDetail/Portfolio/Portfolio';
 import { FaBars } from 'react-icons/fa';
 
 // const handleToggleSidebar = (value) => {
@@ -36,11 +39,15 @@ export default function App() {
             <div className="btn-toggle" onClick={() => handleToggleSidebarMobile(toggled)}>
               <FaBars />
             </div>          
-            <Switch>     
+            <Switch>
                 <Route path="/Home" component={Home}/>
                 <Route exact path="/" component={Home} />
-                <Route path="/Projects" component={Projects} />
+                <Route exact path="/Projects" component={Projects} />
                 <Route path="/About" component={About} />
+                <Route path="/Contact" component={Contact} />
+                <Route path="/Projects/DiceBot" component={DiceBot} />
+                <Route path="/Projects/Pathfinder" component={Pathfinder} />
+                <Route path="/Projects/Portfolio" component={Portfolio} />
                 <Route path="/Contact" component={Contact} />
             </Switch>
           </main>
