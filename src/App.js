@@ -17,7 +17,7 @@ import { FaBars } from 'react-icons/fa';
 // }
 
 export default function App() {
-  const [toggled, setToggled] = useState(true);
+  const [toggled, setToggled] = useState(false);
   const [collapsed, setCollapsed] = useState(true);
 
   const handleToggleSidebarMobile = (value) => {
