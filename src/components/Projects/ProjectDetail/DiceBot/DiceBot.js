@@ -8,7 +8,7 @@ export default function DiceBot() {
             </header>
             <p className="block">
                 Mr Dice Guy is a discord chatbot made with the intention
-                of being used for tabletop roleplaying games like Dungeons & Dragons. It was dveloped 
+                of being used for tabletop roleplaying games like Dungeons & Dragons. It was developed 
                 using JavaScript and the Discord.js node module. 
             </p>
             <header className="head">
