@@ -86,7 +86,7 @@ body {
 		overflow-y: auto;
 		header {
 			margin-top: 15px;
-			margin-left: 44px;
+			margin-left: 35px;
 			border-bottom: 1px solid #efefef;
 			h1 {
 				display: flex;
@@ -123,19 +123,6 @@ body {
 			color: lightblue;
 			text-decoration: none;
 		}
-
-		footer {
-			margin-top: auto;
-			color: #888;
-			text-align: center;
-			a {
-				text-decoration: none;
-				color: #888;
-				&:hover {
-					text-decoration: underline;
-				}
-			}
-		}
 	}
 	.social-bagdes {
 		margin-top: 10px;
@@ -146,7 +133,7 @@ body {
 
 	.block {
 		display: block;
-		margin-left: 45px;
+		margin-left: 35px;
 		margin-bottom: 24px;
 		font-size: 18px;
 		max-width: 700px;
@@ -214,10 +201,31 @@ body {
 				margin-left: auto;
 			}
 		}
+		main {
+			header {
+				margin-top: 15px;
+				margin-left: 25px;
+				border-bottom: 1px solid #efefef;
+				h1 {
+					display: flex;
+					align-items: center;
+					transform: translateX(0px);
+					color: rgb(171, 179, 179);
+					margin-top: 35px;
+				}
+				h2 {
+					display: flex;
+					align-items: center;
+					transform: translateX(0px);
+					color: rgb(171, 179, 179);
+					margin-top: 15px;
+				}
+			}
+		}
 
 		.block {
 			display: block;
-			margin-left: 45px;
+			margin-left: 25px;
 			margin-bottom: 24px;
 			font-size: 18px;
 			max-width: 300px;
@@ -225,24 +233,5 @@ body {
 				margin-left: 10px;
 			}
 		}
-	}
-}
-
-.badge {
-	padding: 3px 6px;
-	font-size: 9px;
-	letter-spacing: 1px;
-	border-radius: 15px;
-	&.red {
-		color: #ffffff;
-		background: #d63030;
-	}
-	&.gray {
-		color: #ffffff;
-		background: #777777;
-	}
-	&.yellow {
-		color: #000000;
-		background: #ffd331;
 	}
 }
