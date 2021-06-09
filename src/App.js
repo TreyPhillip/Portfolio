@@ -9,6 +9,7 @@ import Contact from './components/Contact/Contact';
 import DiceBot from './components/Projects/ProjectDetail/DiceBot/DiceBot';
 import Pathfinder from './components/Projects/ProjectDetail/Pathfinder/Pathfinder';
 import Portfolio from './components/Projects/ProjectDetail/Portfolio/Portfolio';
+import Services from './components/Services/Services';
 import { FaBars } from 'react-icons/fa';
 
 // const handleToggleSidebar = (value) => {
@@ -49,6 +50,7 @@ export default function App() {
                 <Route path="/Projects/Pathfinder" component={Pathfinder} />
                 <Route path="/Projects/Portfolio" component={Portfolio} />
                 <Route path="/Contact" component={Contact} />
+                <Route path="/Services" component={Services} />
             </Switch>
           </main>
       </div>
