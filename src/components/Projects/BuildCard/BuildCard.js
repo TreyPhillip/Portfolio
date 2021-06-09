@@ -35,7 +35,8 @@ import Typography from '@material-ui/core/Typography';
                     /> */}
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
-                            Total Cost: {props.build.price}
+                            Total Cost: {props.build.price} <br /> <br />
+                            Pictures coming soon
                         </Typography>
                     </CardContent>
                 </CardActionArea>
