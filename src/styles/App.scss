@@ -157,6 +157,30 @@ body {
 		margin-right: auto;
 	}
 
+	.swapper {
+		background-color: #adadad;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		transition-duration: 0.4s;
+	}
+
+	// .swapper:hover {
+	// 	background-color: #363535;
+	// 	color: black;
+	// }
+
+	button:disabled,
+	button[disabled] {
+		border: 1px solid #999999;
+		background-color: #cccccc;
+		color: #666666;
+	}
+
 	&.rtl {
 		direction: rtl;
 		text-align: right;

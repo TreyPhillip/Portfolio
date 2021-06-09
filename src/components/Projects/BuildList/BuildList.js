@@ -1,11 +1,12 @@
 import React from 'react';
-import ProjectCard  from '../ProjectCard/ProjectCard';
+import BuildCard  from '../BuildCard/BuildCard';
 import { Container } from "reactstrap";
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
+import { Link } from "react-router-dom";
 
-const ProjectList = props => {
+const BuildList = props => {
     function getCols(screenWidth) {
         if (isWidthUp('xl', screenWidth)) {
             return 5;
@@ -29,9 +30,11 @@ const ProjectList = props => {
         <div>
             <Container className="project-list">
                 <GridList cellHeight={460} cols={cols} spacing={15}>
-                    {props.project.map((project) =>
-                    <GridListTile key={project.projectid}  fullwidth="true" className="project-tile">
-                        <ProjectCard project={project} />
+                    {props.build.map((build) =>
+                    <GridListTile key={build.buildid}  fullwidth="true" className="project-tile">
+                        <Link to=''>
+                            <BuildCard build={build} />
+                        </Link>
                     </GridListTile>
                     )} 
                 </GridList>
@@ -40,4 +43,4 @@ const ProjectList = props => {
     );
 };
 
-export default withWidth()(ProjectList)
+export default withWidth()(BuildList)
