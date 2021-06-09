@@ -10,9 +10,10 @@ export default function Contact() {
                 <h1>Contact Me</h1>
             </header>
             <p className="block"> 
-                I am currently looking for long term employment, but I am also 
-                interested in freelance work, so feel free to send me a message on
-                one of the platforms below.
+                I am currently interested in full time or short term/freelance work.
+                I do a veriety of different programming work such as Web development or 
+                Application Development. I also do work building PCs.
+                If you are interested, please send me a message on one of the platforms below.
                 <br />
                 <br />
                 {email}
