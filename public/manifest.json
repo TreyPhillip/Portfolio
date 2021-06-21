@@ -8,7 +8,8 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
+  "description": "Trey Phillip's Portfolio, a Website that delivers information on him as well as the services he provides, such as Website development or Custom Computer Builds",
+  "start_url": "treyphillip.github.io",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
