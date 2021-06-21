@@ -29,9 +29,7 @@ export default function App() {
           <meta charSet="utf-8" />
           <title>Trey Phillip | Junior Developer</title>
           <link rel="canonical" href="https://treyphillip.github.io" />
-          <meta name="description" content="Trey Phillip's Portfolio, 
-            a Website that delivers information on him as well as the services
-            he provides, such as Website development or Custom Computer Builds" />
+          <meta name="description" content="Trey Phillip's Portfolio, a Website that delivers information on him as well as the services he provides, such as Website development or Custom Computer Builds" />
         </Helmet>    
           <Sidebar
             toggled={toggled}
