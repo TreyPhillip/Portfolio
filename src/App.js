@@ -10,12 +10,8 @@ import DiceBot from './components/Projects/ProjectDetail/DiceBot/DiceBot';
 import Pathfinder from './components/Projects/ProjectDetail/Pathfinder/Pathfinder';
 import Portfolio from './components/Projects/ProjectDetail/Portfolio/Portfolio';
 import Services from './components/Services/Services';
+import { Helmet } from 'react-helmet';
 import { FaBars } from 'react-icons/fa';
-
-// const handleToggleSidebar = (value) => {
-//   setToggled(!toggled);
-//   setCollapsed(!collapsed);
-// }
 
 export default function App() {
   const [toggled, setToggled] = useState(false);
@@ -26,11 +22,17 @@ export default function App() {
     setCollapsed(toggled);
   }
 
-  document.title = 'Trey Phillip | Junior Developer';
-
   return (
     <HashRouter basename={process.env.PUBLIC_URL}>
-      <div className={`app ${toggled ? 'toggled' : ''}`}>        
+      <div className={`app ${toggled ? 'toggled' : ''}`}>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Trey Phillip | Junior Developer</title>
+          <link rel="canonical" href="https://treyphillip.github.io" />
+          <meta name="description" content="Trey Phillip's Portfolio, 
+            a Website that delivers information on him as well as the services
+            he provides, such as Website development or Custom Computer Builds" />
+        </Helmet>    
           <Sidebar
             toggled={toggled}
             collapsed={collapsed}
