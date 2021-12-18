@@ -7,26 +7,23 @@ export default function About() {
                 <h1>About Me</h1>
             </header>      
             <p className="block">
-                I live in Ontario, Canada and I recently graduated from Conestoga College with an Ontario College
-                Advanced Diploma in Computer Science & IT. Since my graduation I have spent my time learning new 
-                technologies and looking for employment.
+                I live in Ontario, Canada and I graduated from Conestoga College in 2020. Since graduation, I spent some 
+                time learning new technologies, and in 2021 started as a Junior Developer in Test at Ford Motors.
             </p>
             <header className="head">
                 <h2>Education</h2>
             </header>
             <p className="block">
-                My education focused on hands on work with a variety of languages and frameworks.Many of my classes 
-                used C# to teach the computer science concepts, but I also had classes on other languages like JavaScript.
+                My education focused on hands on work with a variety of languages and frameworks. Many of my classes 
+                focused on C# to teach the computer science concepts, but I was also instructed on other languages like JavaScript.
                 I am self taught in a number of other areas such as React and Python.
             </p>
             <header className="head">
                 <h2>Skills</h2>
             </header>
             <p className="block">
-                I am most confident in my skills for Web design and utilizing technologies such as React.js and
-                Node.js. However, I am also proficient in other fields like Application and Database design. I have
-                yet to gain any professional experience in these technologies, but I am confident in my ability to 
-                perform regardless
+                I have experience in a variety of different skills, including Web Development(React.js), System Administration, 
+                App Development, Debugging and Wiring & Soldering.
             </p>
         </main>
     );
