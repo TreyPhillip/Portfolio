@@ -8,7 +8,7 @@ export default function About() {
             </header>      
             <p className="block">
                 I live in Ontario, Canada and I graduated from Conestoga College in 2020. Since graduation, I spent some 
-                time learning new technologies, and in 2021 started as a Junior Developer in Test at Ford Motors
+                time learning new technologies, and in 2021 started as a Junior Developer in Test at Ford Motors.
             </p>
             <header className="head">
                 <h2>Education</h2>
