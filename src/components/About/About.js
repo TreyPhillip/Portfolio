@@ -22,7 +22,8 @@ export default function About() {
                 <h2>Skills</h2>
             </header>
             <p className="block">
-                I have experience in a variety of different skills, including Web Development(React.js), System Administration and Soldering
+                I have experience in a variety of different skills, including Web Development(React.js), System Administration, 
+                App Development, Debugging and Wiring & Soldering.
             </p>
         </main>
     );
