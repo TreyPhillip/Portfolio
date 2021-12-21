@@ -11,7 +11,7 @@ export default function Contact() {
             </header>
             <p className="block">
                 Currently I am employed as a contractor, but I am open to offers for when my contract ends in July 2022.
-                I am most interested in working in Web or App Debelopment, but I also do work building PCs
+                I am most interested in working in Web or App Development, but I also do work building PCs.
                 If you are interested, please send me a message on one of the platforms below.
                 <br />
                 <br />
