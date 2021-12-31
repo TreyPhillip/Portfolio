@@ -7,7 +7,7 @@ import {
     SidebarHeader,
     SidebarContent,
 } from 'react-pro-sidebar';
-import { FaWrench, FaBars, FaInfo, FaHome, FaEnvelope, FaShoppingCart } from 'react-icons/fa';
+import { FaWrench, FaBars, FaInfo, FaHome, FaEnvelope } from 'react-icons/fa';
 
 class Sidebar extends Component {
     constructor(props) {
