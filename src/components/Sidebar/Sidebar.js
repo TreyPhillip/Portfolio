@@ -7,7 +7,7 @@ import {
     SidebarHeader,
     SidebarContent,
 } from 'react-pro-sidebar';
-import { FaWrench, FaBars, FaInfo, FaHome, FaEnvelope, FaShoppingCart } from 'react-icons/fa';
+import { FaWrench, FaBars, FaInfo, FaHome, FaEnvelope } from 'react-icons/fa';
 
 class Sidebar extends Component {
     constructor(props) {
@@ -20,52 +20,48 @@ class Sidebar extends Component {
     render() {
         return (
             <div className={`app  ${this.state.toggled ? 'toggled' : ''}`}>
-            <ProSidebar
-                collapsed={this.props.collapsed}
-                toggled={this.props.toggled}
-                breakPoint="md"
-                onToggle={this.props.handleToggleSidebar}
-            >
-                <SidebarHeader onClick={() => this.props.handleToggleSidebar(this.props.toggled)}>
-                <div
-                    style={{
-                    padding: '30px',
-                    textTransform: 'uppercase',
-                    fontWeight: 'bold',
-                    fontSize: 14,
-                    letterSpacing: '1px',
-                    overflow: 'hidden',
-                    textOverflow: 'ellipsis',
-                    whiteSpace: 'nowrap',
-                    }}>
-                    <FaBars onClick={() => this.props.handleToggleSidebar(true)} />
-                </div>
-                </SidebarHeader>
-                    <SidebarContent>
-                        <Menu iconShape="circle">
-                            <MenuItem icon={<FaHome />}>
-                                Home
-                                <Link to="/"></Link>
-                            </MenuItem>
-                            <MenuItem icon={<FaInfo />}> 
-                                About me
-                                <Link to="/About"></Link>
-                            </MenuItem>
-                            <MenuItem icon={<FaWrench />}> 
-                                Projects
-                                <Link to="/Projects"></Link>
-                            </MenuItem>
-                            <MenuItem icon={<FaShoppingCart />}> 
-                                Services
-                                <Link to="/Services"></Link>
-                            </MenuItem>
-                            <MenuItem icon={<FaEnvelope />}> 
-                                Contact Me
-                                <Link to="/Contact"></Link>
-                            </MenuItem>
-                        </Menu>
-                    </SidebarContent>             
-                </ProSidebar>
+                <ProSidebar
+                    collapsed={this.props.collapsed}
+                    toggled={this.props.toggled}
+                    breakPoint="md"
+                    onToggle={this.props.handleToggleSidebar}
+                >
+                    <SidebarHeader onClick={() => this.props.handleToggleSidebar(this.props.toggled)}>
+                    <div
+                        style={{
+                        padding: '30px',
+                        textTransform: 'uppercase',
+                        fontWeight: 'bold',
+                        fontSize: 14,
+                        letterSpacing: '1px',
+                        overflow: 'hidden',
+                        textOverflow: 'ellipsis',
+                        whiteSpace: 'nowrap',
+                        }}>
+                        <FaBars onClick={() => this.props.handleToggleSidebar(true)} />
+                    </div>
+                    </SidebarHeader>
+                        <SidebarContent>
+                            <Menu iconShape="circle">
+                                <MenuItem icon={<FaHome />}>
+                                    Home
+                                    <Link to="/"></Link>
+                                </MenuItem>
+                                <MenuItem icon={<FaInfo />}> 
+                                    About me
+                                    <Link to="/About"></Link>
+                                </MenuItem>
+                                <MenuItem icon={<FaWrench />}> 
+                                    Projects
+                                    <Link to="/Projects"></Link>
+                                </MenuItem>
+                                <MenuItem icon={<FaEnvelope />}> 
+                                    Contact Me
+                                    <Link to="/Contact"></Link>
+                                </MenuItem>
+                            </Menu>
+                        </SidebarContent>             
+                    </ProSidebar>
                 </div>
         );
     }
