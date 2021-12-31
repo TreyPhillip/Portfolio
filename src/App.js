@@ -50,7 +50,6 @@ export default function App() {
                 <Route path="/Projects/Pathfinder" component={Pathfinder} />
                 <Route path="/Projects/Portfolio" component={Portfolio} />
                 <Route path="/Contact" component={Contact} />
-                <Route path="/Services" component={Services} />
             </Switch>
           </main>
       </div>
