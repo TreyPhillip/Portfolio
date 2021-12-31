@@ -9,7 +9,6 @@ import Contact from './components/Contact/Contact';
 import DiceBot from './components/Projects/ProjectDetail/DiceBot/DiceBot';
 import Pathfinder from './components/Projects/ProjectDetail/Pathfinder/Pathfinder';
 import Portfolio from './components/Projects/ProjectDetail/Portfolio/Portfolio';
-import Services from './components/Services/Services';
 import { Helmet } from 'react-helmet';
 import { FaBars } from 'react-icons/fa';
 
