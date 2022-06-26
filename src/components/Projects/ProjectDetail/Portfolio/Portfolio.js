@@ -15,7 +15,7 @@ export default function PathFinder() {
                 <h1>How was it built?</h1>
             </header>
             <p className="block">
-                The app is currently just a React.js app hosted on GitHub Pages, but I have 
+                The app is currently just a React.js app hosted on Vercel, but I have 
                 plans to add some features that will may require a backend (most likely Node.js).
                 Some examples of those featutes include a Blog, comment system and a simple 
                 authentication with google or another third party system to make those comments.

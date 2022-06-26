@@ -16,7 +16,7 @@ export default function PathFinder() {
             </header>
             <p className="block">
                 To begin using the application, simply download and unzip the file from my <a href="https://github.com/TreyPhillip/PathfindingVisualizer">GitHub</a>. 
-                The python file is packaged with a .exe file so you do not need to download anything other than the GitHub zip in order 
+                The python file is packaged with a .exe file so you do not need to download anything other than the GitHub zip
                 to use it. Navigate to the unzipped Pathfinding Visualizer folder and into dist then PathfindingVisualizer. 
                 Finally locate the PathfindingVisualizer.exe file and double click to run. Instructions for use will be 
                 along the top of the window.
