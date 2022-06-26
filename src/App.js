@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Route, HashRouter, Switch } from 'react-router-dom';
-import './styles/App.scss';
+import { Route, Routes } from 'react-router-dom';
+import './App.scss';
 import Sidebar from './components/Sidebar/Sidebar';
 import Home from './components/Home/Home';
 import Projects from './components/Projects/Projects';
@@ -22,7 +22,6 @@ export default function App() {
   }
 
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
       <div className={`app ${toggled ? 'toggled' : ''}`}>
         <Helmet>
           <meta charSet="utf-8" />
@@ -39,19 +38,18 @@ export default function App() {
             <div className="btn-toggle" onClick={() => handleToggleSidebarMobile(toggled)}>
               <FaBars />
             </div>          
-            <Switch>
-                <Route path="/Home" component={Home}/>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/Projects" component={Projects} />
-                <Route path="/About" component={About} />
-                <Route path="/Contact" component={Contact} />
-                <Route path="/Projects/DiceBot" component={DiceBot} />
-                <Route path="/Projects/Pathfinder" component={Pathfinder} />
-                <Route path="/Projects/Portfolio" component={Portfolio} />
-                <Route path="/Contact" component={Contact} />
-            </Switch>
+            <Routes>
+                <Route path="/Home" element={<Home />}/>
+                <Route exact path="/" element={<Home />} />
+                <Route path="/Projects" element={<Projects />} />
+                <Route path="/About" element={<About />} />
+                <Route path="/Contact" element={<Contact />} />
+                <Route path="/Projects/DiceBot" element={<DiceBot />} />
+                <Route path="/Projects/Pathfinder" element={<Pathfinder />} />
+                <Route path="/Projects/Portfolio" element={<Portfolio />} />
+                <Route path="/Contact" element={<Contact />} />
+            </Routes>
           </main>
       </div>
-    </HashRouter>
   );
 }
